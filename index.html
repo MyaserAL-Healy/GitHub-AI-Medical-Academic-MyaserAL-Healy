@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="بوابة ياسر الطبية الأكاديمية للتثقيف والبحث الصحي." />
+  <title>بوابة ياسر الطبية الأكاديمية</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="العودة إلى الصفحة الرئيسية">
+      <span class="brand-mark">ي</span>
+      <span><strong>بوابة ياسر</strong><small>الطبية الأكاديمية</small></span>
+    </a>
+    <nav aria-label="التنقل الرئيسي">
+      <a href="#topics">الموضوعات</a>
+      <a href="#research">البحث والتعليم</a>
+      <a href="#safety">السلامة</a>
+      <button class="assistant-trigger" data-open-assistant>اسأل المساعد</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">منصة تثقيفية وبحثية</p>
+        <h1>معرفة طبية أوضح، وبحث أكاديمي أسهل.</h1>
+        <p class="lead">واجهة أولية تجمع الموضوعات الصحية، المراجع، وأدوات التعلم في مكان واحد، مع مساعد إرشادي سريع.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#topics">استكشف الموضوعات</a>
+          <button class="button secondary" data-open-assistant>ابدأ سؤالًا</button>
+        </div>
+      </div>
+      <div class="portrait-card" aria-label="هوية بوابة ياسر">
+        <div class="portrait-placeholder" aria-hidden="true">👨🏻‍⚕️</div>
+        <strong>ياسر</strong>
+        <span>تعلم • بحث • رعاية</span>
+      </div>
+    </section>
+
+    <aside class="medical-notice" role="note">
+      <strong>تنبيه مهم:</strong> هذه المنصة تعليمية وبحثية فقط، ولا تُعد تشخيصًا أو وصفة علاجية، ولا تغني عن الطبيب أو المستشفى. في الطوارئ، تواصل فورًا مع خدمات الطوارئ المحلية.
+    </aside>
+
+    <section id="topics" class="section">
+      <div class="section-heading"><p class="eyebrow">مسارات المعرفة</p><h2>موضوعات قابلة للتوسع</h2></div>
+      <div class="topic-grid">
+        <a class="topic-card" href="#research"><span>🫀</span><h3>الأمراض المزمنة</h3><p>السكري، الضغط، القلب، والغدة الدرقية.</p></a>
+        <a class="topic-card" href="#research"><span>👶</span><h3>الأطفال والنساء</h3><p>محتوى تثقيفي للحمل والطفولة وصحة الأسرة.</p></a>
+        <a class="topic-card" href="#research"><span>🧬</span><h3>الأمراض الوراثية والمعدية</h3><p>تعريفات ومراجع وأسئلة للتعلم المنظم.</p></a>
+        <a class="topic-card" href="#research"><span>🚑</span><h3>الطوارئ والكوارث</h3><p>مبادئ الاستعداد والسلامة والتوجيه للمساعدة.</p></a>
+      </div>
+    </section>
+
+    <section id="research" class="section split-section">
+      <div><p class="eyebrow">البحث والتعليم</p><h2>بنية واحدة للمعلومات الطبية</h2><p>سيتم تنظيم كل موضوع إلى تعريف، عوامل خطر، علامات تستدعي الانتباه، فحوصات عامة، رعاية مساندة، مراجع، وتاريخ تحديث. لن تُضاف توصيات شخصية أو جرعات دوائية.</p></div>
+      <div class="checklist"><div>✓ مراجع وروابط موثوقة</div><div>✓ فصل المحتوى التعليمي عن القرار السريري</div><div>✓ دعم العربية والإنجليزية لاحقًا</div><div>✓ قابلية الربط مع مشاريع التمريض والوثائق</div></div>
+    </section>
+
+    <section id="safety" class="section safety-section"><p class="eyebrow">السلامة أولًا</p><h2>معلومات مسؤولة قبل أي إجابة</h2><p>لا تدخل بيانات شخصية أو سجلات مرضى. أي محتوى صحي يحتاج إلى مراجعة مختص مؤهل، وتبقى قرارات التشخيص والعلاج من اختصاص الفريق الطبي.</p></section>
+  </main>
+
+  <div class="assistant-panel" data-assistant-panel aria-hidden="true" role="dialog" aria-labelledby="assistant-title">
+    <div class="assistant-header"><div><span class="status-dot"></span><strong id="assistant-title">المساعد الإرشادي</strong></div><button class="close-button" data-close-assistant aria-label="إغلاق">×</button></div>
+    <p class="assistant-disclaimer">إجابات تعليمية عامة فقط، وليست تشخيصًا أو علاجًا.</p>
+    <div class="suggestions"><button data-question="ما هدف هذه المنصة؟">هدف المنصة</button><button data-question="متى أطلب مساعدة عاجلة؟">مساعدة عاجلة</button><button data-question="كيف أستخدم المراجع؟">استخدام المراجع</button></div>
+    <form data-assistant-form><label for="question">سؤالك</label><textarea id="question" rows="3" placeholder="اكتب سؤالًا تعليميًا..."></textarea><button class="button primary" type="submit">إجابة إرشادية</button></form>
+    <div class="assistant-answer" data-answer aria-live="polite">اختر سؤالًا مقترحًا أو اكتب سؤالك.</div>
+  </div>
+  <div class="backdrop" data-close-assistant></div>
+  <script src="app.js"></script>
+</body>
+</html>
